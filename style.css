@@ -1,6 +1,21 @@
 html {
-  background-color: darkcyan;
+  background: linear-gradient(45deg, rgb(255, 246, 146), rgb(34, 255, 225));
+  background-size: 400% 400%;
+  animation: gradientShift 500ms ease infinite;
 }
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .titolo {
   color: darkred;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
