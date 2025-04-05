@@ -94,16 +94,6 @@ html {
   font-weight: bold;
 }
 
-.immagine {
-  border-radius: 300px;
-  width: 350px;
-}
-
-.immagine:hover {
-  border-radius: 700px;
-  width: 700px;
-}
-
 .img_full {
   display: block;
   max-width: 100%;
@@ -150,12 +140,17 @@ a:hover {
   background-color: yellow;
 }
 
-.link-img:hover {
-  background-color: transparent;
+.link-img {
+  padding: 20px;
+  padding-top: 5px;
+  display: block;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.link-img-container {
-  padding: 20px;
+.link-img:hover {
+  background-color: transparent;
 }
 
 .link-img-caption {
@@ -164,6 +159,7 @@ a:hover {
   padding: 20px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  text-align: center;
 }
 
 @keyframes body {
