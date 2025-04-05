@@ -1,5 +1,9 @@
 html {
   background-color: cadetblue;
+  animation-name: body;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @font-face {
@@ -109,10 +113,22 @@ html {
 }
 
 nav {
-  background-image: linear-gradient(to right, whitesmoke, #f8ca1d);
+  background-image: linear-gradient(
+    90deg,
+    whitesmoke,
+    #cedbed,
+    #f8ca1d,
+    #cedbed,
+    whitesmoke
+  );
   padding: 10px;
   position: sticky;
   top: 0;
+  background-size: 200%;
+  animation-name: navgrad;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 
   display: flex;
   flex-direction: row;
@@ -148,4 +164,34 @@ a:hover {
   padding: 20px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+@keyframes body {
+  0% {
+    background-color: cadetblue;
+  }
+  25% {
+    background-color: darkslategray;
+  }
+  50% {
+    background-color: darkcyan;
+  }
+  75% {
+    background-color: darkslategray;
+  }
+  100% {
+    background-color: cadetblue;
+  }
+}
+
+@keyframes navgrad {
+  0% {
+    background-position: 100% 0%;
+  }
+  50% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: -100% 0%;
+  }
 }
