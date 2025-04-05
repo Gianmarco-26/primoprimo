@@ -2,14 +2,86 @@ html {
   background-color: cadetblue;
 }
 
-* {
-  font-family: monospace;
+@font-face {
+  font-family: Cabin;
+  src: url(./font/Cabin/Cabin-VariableFont_wdth\wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Cabin;
+  src: url(./font/Cabin/Cabin-Italic-VariableFont_wdth\wght.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Exo_2;
+  src: url(./font/Exo_2/Exo2-VariableFont_wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Exo_2;
+  src: url(./font/Exo_2/Exo2-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: JetBrains_Mono;
+  src: url(./font/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JetBrains_Mono;
+  src: url(./font/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Kode_Mono;
+  src: url(./font/Kode_Mono/KodeMono-VariableFont_wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Noto_Sans_Arabic;
+  src: url(./font/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\wght.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Oxygen_Mono;
+  src: url(./font/Oxygen_Mono/OxygenMono-Regular.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Sono;
+  src: url(./font/Sono/Sono-VariableFont_MONO\wght.ttf);
+  font-style: normal;
 }
 
 .titolo {
+  font-family: JetBrains_Mono;
   color: antiquewhite;
+  text-align: center;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
+
+.sottotitolo {
+  font-family: JetBrains_Mono;
+  color: antiquewhite;
+  text-align: center;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .paragrafo {
+  font-family: Oxygen_Mono;
   color: whitesmoke;
   border: 2px;
   border-radius: 20px;
@@ -29,7 +101,7 @@ html {
 }
 
 nav {
-  background-color: whitesmoke;
+  background-image: linear-gradient(to right, whitesmoke, #f8ca1d);
   padding: 10px;
   position: sticky;
   top: 0;
@@ -43,7 +115,7 @@ nav {
 a {
   text-decoration: none;
   color: darkblue;
-  font-family: monospace;
+  font-family: Exo_2;
 }
 
 a:visited {
@@ -63,6 +135,7 @@ a:hover {
 }
 
 .link-img-caption {
+  font-family: Exo_2;
   color: whitesmoke;
   padding: 20px;
   padding-bottom: 0px;
